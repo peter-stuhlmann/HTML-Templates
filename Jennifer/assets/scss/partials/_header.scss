@@ -1,0 +1,74 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-image: url(../img/dummy-girl.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    box-shadow: inset 0px -12px 10px -10px rgba(0, 0, 0, 0.4);
+
+    h1 {
+        font-family: $secondaryFont;
+        font-weight: 100;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3.8em;
+        line-height: 1.3em;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding: 175px 26px 0 26px;
+        box-sizing: border-box;
+
+        @media (max-width: $tablet) {
+            font-size: 2.5em
+        }
+    }
+
+    & > span {
+        display: block;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+//        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        box-sizing: border-box
+    }
+
+    img {
+        width: 40px;
+        padding: 5px 10px 5px 50px;
+        float: left;
+
+        @media (max-width: $tablet) {
+            display: none
+        }
+    }
+}
+
+#logo {
+    display: none;
+
+    @media (max-width: $tablet) {
+        display: none
+    }
+}
+
+#site-title {
+    color: #fff;
+    line-height: 1em;
+    float: left;
+    margin: 6px 0;
+
+    @media (max-width: $tablet) {
+        display: none
+    }
+}

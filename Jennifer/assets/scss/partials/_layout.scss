@@ -1,0 +1,356 @@
+html {
+    //    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: $primaryFont;
+    background-color: #000
+}
+
+
+.box {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $primaryColor;
+    color: #fff;
+
+    p {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 70px 15px;
+        box-sizing: border-box;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        text-align: justify;
+
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.personalien {
+    width: 100%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background-color: $primaryColor;
+    color: #fff;
+
+    h2 {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        line-height: 1.5em
+    }
+
+    h3 {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        line-height: 1.5em
+    }
+
+    p {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 1.5em
+    }
+}
+
+.intro-box {
+    width: 100%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background-color: $primaryColor;
+    color: #fff;
+
+    wrap {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+            opacity: 0.7
+        }
+    }
+
+    p {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+
+
+.introbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $desktop;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+
+
+.daten {
+    flex: 0 0 65%;
+
+    @media (max-width: $tablet) {
+        flex: 0 0 100%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        margin-top: 0
+    }
+}
+
+
+.profile {
+    flex: 0 0 33%;
+
+    @media (max-width: $tablet) {
+        flex: 0 0 100%;
+        margin-top: 25px
+    }
+
+    img {
+        width: 100%
+    }
+}
+
+
+
+
+
+.leistungen,
+.contact {
+    width: 100%;
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-image: url(../img/dummy-girl.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+
+    h2 {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+
+    h3 {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 20px 15px 0 15px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    p {
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        line-height: 1.5em;
+
+        background: -webkit-linear-gradient(bottom right, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+
+
+#about,
+#portfolio,
+#service,
+#contact,
+#tmg-angaben,
+#datenschutz-intro,
+.introbox-wrapper {
+    padding-top: 50px
+}
+
+.wrap {
+    padding: 15px 15px 80px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+    color: #fff
+}
+
+
+h2 {
+    font-size: 3em;
+    line-height: normal;
+    font-weight: 100;
+
+    font-family: $secondaryFont;
+
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+#impressum,
+#datenschutz {
+    color: #fff;
+    a {
+        color: #fff
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+    clear: both
+}
+
+// PREISE
+
+* {
+    box-sizing: border-box;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    .columns {
+        flex: 0 0 32%;
+        margin-bottom: 50px;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media only screen and (max-width: 500px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    .price {
+        list-style-type: none;
+        border: 1px solid;
+        border-image: linear-gradient(to right, #8f6B29, #FDE08D, #ffcb65);
+        border-image-slice: 1;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+    }
+
+    .price .header {
+        background-color: #111;
+        font-size: 25px;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .price li {
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, #8f6B29, #FDE08D, #ffcb65);
+        border-image-slice: 1;
+        padding: 20px;
+        text-align: center;
+
+        &:last-child {
+            border-bottom: 0
+        }
+    }
+
+    .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .columns {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    border: 0;
+    width: calc(100% - (#{$primaryPadding} * 2));
+    max-width: calc(#{$desktop} - (#{$primaryPadding} * 2));
+    height: 2px;
+    background: -webkit-linear-gradient(right, #8f6B29, #FDE08D, #ffcb65);
+}

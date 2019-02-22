@@ -1,0 +1,33 @@
+.download-file {
+    position: sticky;
+    top: 70px;
+    width: 160px;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    background-color: #113659;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.9
+    }
+}
+
+.copyright {
+    color: $secondaryColor;
+    font-size: 0.7em;
+    float: left;
+    margin: 0 0 20px 0;
+
+    @media (max-width: $tablet) {
+        float: none;
+            margin: 0;
+    }
+}
+
+.zeitraum {
+    font-weight: bold
+}

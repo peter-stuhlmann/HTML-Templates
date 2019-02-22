@@ -1,0 +1,112 @@
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+
+    &:hover {
+        background-color: $secondaryColor
+    }
+
+    @media (max-width: $tablet) {
+        display: block;
+        margin: 12px 0
+    }
+}
+
+.portfolio-ext-link {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #000;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+    display: block;
+
+    &:hover {
+        background-color: $secondaryColor;
+        border-top: 1px solid $primaryColor
+    }
+}
+
+.scrolldown i {
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 3.5em;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn3d {
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    -moz-outline-style: none;
+    outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+    top: 2px;
+}
+
+.btn3d.btn-warning {
+    box-shadow: 0 0 0 1px #d79a47 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #ffcb65);
+    -webkit-text-fill-color: #000;
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+    font-size: 1em
+}
+
+.btn3d.btn-warning:active,
+.btn3d.btn-warning.active {
+    box-shadow: 0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #FEAF20;
+    color: #000 !important
+}
+
+.mw300 {
+    max-width: 300px
+}

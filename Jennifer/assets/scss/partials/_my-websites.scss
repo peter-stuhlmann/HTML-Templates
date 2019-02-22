@@ -1,0 +1,35 @@
+.my-websites-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.my-websites {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    transition: 0.2s;
+    flex: 0 0 32%;
+
+    @media screen and (max-width: $tablet) {
+        flex: 0 0 100%;
+    }
+
+    &:hover {
+        border: 1px solid #000;
+    }
+
+    img {
+        height: 120px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000
+    }
+}
