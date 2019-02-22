@@ -1,0 +1,82 @@
+// VERTICAL
+
+.productcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: $primaryFont;
+
+    h3 {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 12px 10px;
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 0.9em;
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        padding: 12px 10px;
+        color: white;
+        background-color: #960808;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+
+        &:hover {
+            background-color: #670101
+        }
+    }
+}
+
+.productcard-price {
+    color: #304034;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 10px;
+
+    span {
+        font-weight: normal
+    }
+}
+
+.productcard-description {
+    text-align: center;
+    padding: 12px 10px
+}
+
+
+
+// HORIZONATAL
+
+.productcard-horizontal {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    font-family: $primaryFont;
+}
+
+.productcard-horizontal-img {
+    height: 400px;
+    width: 28%;
+    margin: 1%;
+    float: left;
+}
+
+.productcard-horizontal-text {
+    height: 400px;
+    width: 68%;
+    margin: 1%;
+    float: right;
+}

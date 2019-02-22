@@ -1,0 +1,29 @@
+/* --- ECK-HINWEIS (ECK-BANDEROLE) --- */
+
+.ecke-rechts-oben {
+    position: absolute;
+    right: -1px;
+    z-index: 1;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: block;
+
+    span {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(45deg);
+        width: 140px;
+        padding: 10px;
+        display: block;
+        background-color: $primaryColor;
+        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 19px
+    }
+}

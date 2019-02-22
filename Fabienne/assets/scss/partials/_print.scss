@@ -1,0 +1,28 @@
+@media print {
+
+    #sidebar-left,
+    #sidebar-right,
+    #header,
+    #footer,
+    #main-nav,
+    external-links-nav,
+    #menu-main-slide,
+    #comments,
+    #breadcrumbs,
+    #back-to-top,
+    i.far.fa-arrow-alt-circle-up,
+    aside {
+        display: none
+    }
+
+    #content-sidebar-left,
+    #content-sidebar-right,
+    #content-fullwidth {
+        box-shadow: none !important;
+        width: 95%
+    }
+
+    h1 {
+        font-size: 2em
+    }
+}

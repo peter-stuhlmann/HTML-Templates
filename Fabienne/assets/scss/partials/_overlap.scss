@@ -1,0 +1,118 @@
+/* --------------------------------------------------------------------------------
+    ABSCHNITTE FULLWIDTH BACKGROUND
+-------------------------------------------------------------------------------- */
+
+.bgmodule-neutral {
+    background-color: $backgroundColor;
+    padding: 115px 0;
+    color: #000;
+}
+
+.bgmodule-01 {
+    padding: 115px 0;
+    color: $primaryColor;
+}
+
+.bgmodule-02 {
+    background: linear-gradient(to bottom, #414141 0%, #161616 100%);
+    padding: 115px 0;
+    color: #fff;
+}
+
+.bgmodule-03 {
+    background: #8c8c8c;
+    padding: 115px 0 200px 0;
+    color: #fff;
+    z-index: 999;
+    margin: 0 0 -162px 0;
+}
+
+.overlap-down-03 {
+    /* Dieses Overlap-down unter darüberliegendem bgmodule (über .bgmodule-03) einfügen, wenn darüberliegendes bgmodule bündig sein soll. Farbe: #8c8c8c = grau */
+    background-color: #8c8c8c;
+    z-index: 10;
+    height: 50px;
+    right: 35%;
+    position: relative;
+    margin: -50px 0 0 0;
+    transform-origin: top right;
+    transform: skew(45deg);
+}
+
+.bgmodule-04 {
+    background: #8c8c8c;
+    padding: 115px 0 200px 0;
+    color: #fff;
+    z-index: 999;
+    margin: 0 0 -162px 0;
+}
+
+.overlap-up-04 {
+    background-color: #8c8c8c;
+    z-index: 10;
+    height: 75px;
+    right: 70%;
+    position: relative;
+    margin: 0 0 -75px 0;
+    transform-origin: top left;
+    transform: skew(-45deg);
+}
+
+.overlap-down-04 {
+    /* Dieses Overlap-down unter darüberliegendem bgmodule (über .bgmodule-03) einfügen, wenn darüberliegendes bgmodule bündig sein soll. Farbe: #8c8c8c = grau */
+    background-color: #8c8c8c;
+    z-index: 10;
+    height: 50px;
+    right: 35%;
+    position: relative;
+    margin: -50px 0 0 0;
+    transform-origin: top right;
+    transform: skew(45deg);
+}
+
+.overlap-up {
+    background-color: $backgroundColor;
+    z-index: 10;
+    height: 75px;
+    right: 70%;
+    position: relative;
+    margin: 0 0 -75px 0;
+    transform-origin: top left;
+    transform: skew(-45deg);
+}
+
+.overlap-down {
+    background-color: $backgroundColor;
+    z-index: 10;
+    height: 50px;
+    right: 35%;
+    position: relative;
+    margin: -50px 0 0 0;
+    transform-origin: top right;
+    transform: skew(45deg);
+}
+
+@media screen and (max-width: 800px) {
+    .overlap-up {
+        height: 55px;
+        margin: 0 0 -55px 0;
+    }
+
+    .overlap-down,
+    .overlap-down-03 {
+        height: 35px;
+        margin: -35px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .overlap-up {
+        height: 30px;
+        margin: 0 0 -30px 0;
+    }
+
+    .overlap-down {
+        height: 28px;
+        margin: -28px 0 0 0;
+    }
+}

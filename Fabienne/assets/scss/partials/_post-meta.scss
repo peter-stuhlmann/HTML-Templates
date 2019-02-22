@@ -1,0 +1,67 @@
+.by-author {
+    font-weight: bold
+}
+
+.datetime {
+    font-weight: bold
+}
+
+.meta-category {
+    font-weight: bold
+}
+
+.tags {
+    font-style: italic;
+
+    a {
+        &::before {
+            content: "#";
+            font-style: normal;
+        }
+    }
+}
+
+.entry-meta {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    font-size: 0.9em;
+
+    a {
+        text-decoration: none;
+        color: $fontColor;
+        font-size: 0.9em;
+        margin-right: 50px
+    }
+}
+
+/* --------------------------------------------------------------------------------
+    LESEDAUER 
+-------------------------------------------------------------------------------- */
+
+.lesedauer {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 10px;
+    border-radius: 3px;
+
+    &::before {
+        font-family: "FontAwesome";
+        content: "\f017\00a0"
+    }
+}
+
+/* Angabe der Lesedauer bei Blogseite (Auflistung aller Beiträge) */
+
+.lesedauer-meta {
+    color: $primaryColor;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 10px;
+    margin-left: 15px;
+    border-radius: 3px;
+
+    &::before {
+        font-family: "FontAwesome";
+        content: "\f017\00a0"
+    }
+}

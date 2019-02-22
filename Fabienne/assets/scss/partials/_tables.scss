@@ -1,0 +1,92 @@
+.responsive-table {
+    overflow-y: auto
+}
+
+table {
+    width: 100%;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none
+}
+
+th {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $primaryColor;
+    vertical-align: top
+}
+
+tr {
+    vertical-align: top;
+
+    &:nth-of-type(even) {
+        background-color: #F2F2F2
+    }
+
+    &.center {
+        text-align: center
+    }
+}
+
+td {
+    padding: 4px;
+    vertical-align: top;
+
+    & > a > img {
+        height: 176px;
+        max-width: 176px
+    }
+}
+
+
+table.blanco tr:nth-of-type(even) {
+    background: none
+}
+
+
+
+
+// Erste Spalte ist groß bzw. hat eine feste Breite
+
+table.big-first-column {
+    width: 100%;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+
+    th {
+        padding: 5px 10px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $primaryColor;
+        vertical-align: top
+    }
+
+    tr {
+        vertical-align: top;
+
+        &:nth-of-type(even) {
+            background-color: #F2F2F2
+        }
+
+        &.center {
+            text-align: center
+        }
+    }
+
+    td {
+        padding: 4px;
+        vertical-align: top;
+        
+        &:first-child {
+            min-width: 400px;
+            max-width: 110%;
+            padding-right: 25px;
+        }
+    }
+}

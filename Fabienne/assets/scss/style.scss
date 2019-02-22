@@ -1,0 +1,136 @@
+// Font Awesome
+
+@import 'font-awesome/brands';
+@import 'font-awesome/solid';
+
+@import 'font-awesome/variables';
+@import 'font-awesome/mixins';
+@import 'font-awesome/core';
+@import 'font-awesome/larger';
+@import 'font-awesome/fixed-width';
+@import 'font-awesome/list';
+@import 'font-awesome/bordered-pulled';
+@import 'font-awesome/animated';
+@import 'font-awesome/rotated-flipped';
+@import 'font-awesome/stacked';
+@import 'font-awesome/icons';
+@import 'font-awesome/screen-reader';
+
+
+// Styles
+
+@import "partials/variables"; 
+@import "partials/layout";
+@import "partials/basics";
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/content";
+@import "partials/sidebars";
+@import "partials/footer";
+@import "partials/audio-player";
+@import "partials/banderole";
+@import "partials/comments";
+@import "partials/display";
+@import "partials/grid";
+@import "partials/images";
+@import "partials/overlap";
+@import "partials/post-meta";
+@import "partials/product-card";
+@import "partials/products";
+@import "partials/scrollbar";
+@import "partials/skills";
+@import "partials/testmonials";
+@import "partials/buttons";
+@import "partials/grid";
+@import "partials/links";
+@import "partials/breadcrumbs";
+@import "partials/nav";
+@import "partials/searchform";
+@import "partials/tables";
+@import "partials/ads";
+@import "partials/others";
+@import "partials/widgets";
+
+
+// Print styles
+
+@import "partials/print";
+
+
+
+
+
+
+.posts .post,
+.posts .page {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width: 1020px) {
+
+    #footer > nav li {
+        display: inline;
+        font-size: 1em;
+        margin: 0 12.5px;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: $desktop) {
+    #menu-main-slide {
+        display: none !important
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    header .menu-main-container {
+        text-indent: -9999px;
+        height: 0
+    }
+
+    .menu-main-container.mm-menu {
+        text-indent: 0;
+        height: 100%
+    }
+
+    #navbar-main,
+    #header #menu-main-slide {
+        display: none
+    }
+
+    .navbar-toggle {
+        display: block
+    }
+
+    #footer > nav {
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+
+    #footer > nav > ul {
+        margin: 0 auto
+    }
+
+    #footer p {
+        display: block;
+        text-align: center;
+        float: none;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #footer > nav li {
+        display: block;
+        font-size: 1em;
+        margin-left: 0;
+        white-space: nowrap;
+    }
+
+}

@@ -1,0 +1,55 @@
+footer {
+    background-color: $secondaryColor;
+    margin-top: 30px;
+    box-sizing: border-box;
+
+    p {
+        margin: 0;
+        padding: 0 15px;
+        display: inline-block
+    }
+}
+
+#footer {
+    color: $fontColor;
+    font-size: 0.85em;
+    line-height: 1.6;
+    padding: 25px 15px;
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        color: $fontColor;
+        transition: 0.3s ease all;
+
+        &:hover {
+            opacity: 0.8
+        }
+    }
+
+    & > nav {
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+        float: right;
+
+        li {
+            display: inline;
+            font-size: 1em;
+            margin-left: 25px;
+            white-space: nowrap
+        }
+
+        a {
+            color: $fontColor
+        }
+    }
+}
+
+#footer-column {
+    display: inline;
+    margin: 0 0 10px 10px
+}

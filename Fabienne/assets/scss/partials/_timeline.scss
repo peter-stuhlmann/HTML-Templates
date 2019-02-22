@@ -1,0 +1,464 @@
+/* --------------------------------------------------------------------------------
+    CHRONIK
+-------------------------------------------------------------------------------- */
+
+.prst-container {
+
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+
+    &::after {
+        /* clearfix */
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+    @media only screen and (min-width: 1170px) {}
+
+    #prst-timeline {
+        position: relative;
+        padding: 2em 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+    }
+
+    #prst-timeline::before {
+        /* this is the vertical line */
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 18px;
+        height: 100%;
+        width: 2px;
+        background: #f4f4f4;
+    }
+
+    @media only screen and (min-width: 1170px) {
+        #prst-timeline {
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
+        #prst-timeline::before {
+            left: 50%;
+            margin-left: -2px;
+        }
+    }
+
+    .prst-timeline-block {
+        position: relative;
+        margin: 2em 0;
+
+    }
+
+    .prst-timeline-block:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .prst-timeline-block:first-child {
+        margin-top: 0;
+    }
+
+    .prst-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: 1170px) {
+        .prst-timeline-block {
+            margin: 4em 0;
+        }
+
+        .prst-timeline-block:first-child {
+            margin-top: 0;
+        }
+
+        .prst-timeline-block:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .prst-timeline-img {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .prst-timeline-img img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -12px;
+        margin-top: -12px;
+    }
+
+    .prst-timeline-img.bluepoint {
+        background: #495FFF;
+    }
+
+    .prst-timeline-img.greenpoint {
+        background: #74FF6A;
+    }
+
+    @media only screen and (min-width: 1170px) {
+
+        .prst-timeline-img {
+            width: 40px;
+            height: 40px;
+            left: 51%;
+            top: 25px;
+            margin-left: -30px;
+            /* Force Hardware Acceleration in WebKit */
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+        }
+
+        .cssanimations .prst-timeline-img.is-hidden {
+            visibility: hidden;
+        }
+
+        .cssanimations .prst-timeline-img.bounce-in {
+            visibility: visible;
+            -webkit-animation: prst-bounce-1 0.6s;
+            -moz-animation: prst-bounce-1 0.6s;
+            animation: prst-bounce-1 0.6s;
+        }
+    }
+
+    @-webkit-keyframes prst-bounce-1 {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale(0.5);
+            cursor: pointer;
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            cursor: pointer;
+        }
+    }
+
+    @-moz-keyframes prst-bounce-1 {
+        0% {
+            opacity: 0;
+            -moz-transform: scale(0.5);
+            cursor: pointer;
+        }
+
+        60% {
+            opacity: 1;
+            -moz-transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        100% {
+            -moz-transform: scale(1);
+            cursor: pointer;
+        }
+    }
+
+    @keyframes prst-bounce-1 {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            transform: scale(0.5);
+            cursor: pointer;
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+            cursor: pointer;
+        }
+    }
+
+    .prst-timeline-content {
+        position: relative;
+        margin-left: 60px;
+        background: white;
+        border-radius: 0.25em;
+        padding: 1em;
+        border: solid 1px #ccc;
+        box-shadow: 0 3px 0 #ccc;
+    }
+
+    .prst-timeline-content:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .prst-timeline-content h2 {
+        color: #303e49;
+    }
+
+    .prst-timeline-content p,
+    .prst-timeline-content .reisechronik-weiterlesen,
+    .prst-timeline-content .reisechronik-datum {
+        font-size: 13px;
+        font-size: 0.8125rem;
+    }
+
+    .prst-timeline-content .reisechronik-weiterlesen,
+    .prst-timeline-content .reisechronik-datum {
+        display: inline-block;
+    }
+
+    .prst-timeline-content p {
+        margin: 1em 0;
+        line-height: 1.6;
+    }
+
+    .prst-timeline-content .reisechronik-weiterlesen {
+        float: right;
+        padding: .8em 1em;
+        background: #acb7c0;
+        color: white;
+        border-radius: 0.25em;
+    }
+
+    .no-touch .prst-timeline-content .reisechronik-weiterlesen:hover {
+        background-color: #bac4cb;
+    }
+
+    .prst-timeline-content .reisechronik-datum {
+        float: left;
+        padding: .1em 0;
+        opacity: .7;
+    }
+
+    .prst-timeline-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .prst-timeline-content p {
+        font-size: 1rem;
+    }
+
+    .prst-timeline-content .reisechronik-weiterlesen,
+    .prst-timeline-content .reisechronik-datum {
+        font-size: 0.875rem;
+    }
+
+    @media only screen and (min-width: 1170px) {
+        .prst-timeline-content {
+            margin-left: 0;
+            padding: 1.6em;
+            width: 39%;
+        }
+
+        .prst-timeline-content .reisechronik-weiterlesen {
+            float: left;
+        }
+
+        .prst-timeline-content .reisechronik-datum {
+            position: absolute;
+            width: 100%;
+            left: 122%;
+            top: 30px;
+            font-size: 16px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .prst-timeline-block:nth-child(even) .prst-timeline-content {
+            float: right;
+        }
+
+        .prst-timeline-block:nth-child(even) .prst-timeline-content::before {
+            top: 24px;
+            left: auto;
+            right: 100%;
+            border-color: transparent;
+            border-right-color: white;
+        }
+
+        .prst-timeline-block:nth-child(even) .prst-timeline-content .reisechronik-weiterlesen {
+            float: right;
+        }
+
+        .prst-timeline-block:nth-child(even) .prst-timeline-content .reisechronik-datum {
+            left: auto;
+            right: 122%;
+            text-align: right;
+        }
+
+        .cssanimations .prst-timeline-content.is-hidden {
+            visibility: hidden;
+        }
+
+        .cssanimations .prst-timeline-content.bounce-in {
+            visibility: visible;
+            -webkit-animation: prst-bounce-2 0.6s;
+            -moz-animation: prst-bounce-2 0.6s;
+            animation: prst-bounce-2 0.6s;
+        }
+    }
+
+    @media only screen and (min-width: 1170px) {
+
+        /* inverse bounce effect on even content blocks */
+        .cssanimations .prst-timeline-block:nth-child(even) .prst-timeline-content.bounce-in {
+            -webkit-animation: prst-bounce-2-inverse 0.6s;
+            -moz-animation: prst-bounce-2-inverse 0.6s;
+            animation: prst-bounce-2-inverse 0.6s;
+        }
+    }
+
+    @-webkit-keyframes prst-bounce-2 {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-100px);
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: translateX(20px);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+        }
+    }
+
+    @-moz-keyframes prst-bounce-2 {
+        0% {
+            opacity: 0;
+            -moz-transform: translateX(-100px);
+        }
+
+        60% {
+            opacity: 1;
+            -moz-transform: translateX(20px);
+        }
+
+        100% {
+            -moz-transform: translateX(0);
+        }
+    }
+
+    @keyframes prst-bounce-2 {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-100px);
+            -moz-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            -o-transform: translateX(-100px);
+            transform: translateX(-100px);
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            -o-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    @-webkit-keyframes prst-bounce-2-inverse {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(100px);
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: translateX(-20px);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+        }
+    }
+
+    @-moz-keyframes prst-bounce-2-inverse {
+        0% {
+            opacity: 0;
+            -moz-transform: translateX(100px);
+        }
+
+        60% {
+            opacity: 1;
+            -moz-transform: translateX(-20px);
+        }
+
+        100% {
+            -moz-transform: translateX(0);
+        }
+    }
+
+    @keyframes prst-bounce-2-inverse {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(100px);
+            -moz-transform: translateX(100px);
+            -ms-transform: translateX(100px);
+            -o-transform: translateX(100px);
+            transform: translateX(100px);
+        }
+
+        60% {
+            opacity: 1;
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            -ms-transform: translateX(-20px);
+            -o-transform: translateX(-20px);
+            transform: translateX(-20px);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }

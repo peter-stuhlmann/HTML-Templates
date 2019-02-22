@@ -1,0 +1,102 @@
+#header {
+    background-color: $primaryColor;
+    margin: 0;
+    width: 100%
+}
+
+#logo {
+    line-height: 1.2;
+    margin: 50px 15px 65px 15px;
+    text-align: center
+}
+
+#site-title {
+    @media screen and (max-width: $tablet) {
+        display: block;
+        text-align: center
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.7em;
+        margin-bottom: 10px;
+    }
+
+    &::after {
+        content: url('../img/powered.png');
+        vertical-align: 50px;
+        margin-left: -16px;
+        font-size: 80%
+    }
+
+    a {
+        font-size: 6.3em;
+        letter-spacing: inherit;
+        font-family: $siteTitle;
+        margin: 0;
+        display: inline;
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none
+    }
+    
+    span {
+        color: hotpink
+    }
+}
+
+#site-description {
+    color: #000;
+    font-size: 2.4em;
+    margin: 10px 0 0 0;
+    font-family: $siteTitle;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 1.3em;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* --------------------------------------------------------------------------------
+    LOGO IM HEADER
+-------------------------------------------------------------------------------- */
+
+.logo {
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    float: left;
+    padding-right: 25px;
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 20px auto;
+        padding-right: 0;
+    }
+
+    img {
+        height: 115px;
+        width: 115px
+    }
+}
+
+@keyframes logo {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

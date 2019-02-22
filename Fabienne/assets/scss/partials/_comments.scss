@@ -1,0 +1,156 @@
+#comments {
+    font-family: $primaryFont;
+}
+
+.commentlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+
+        &:hover {
+            text-decoration: underline
+        }
+    }
+
+    div.comment-body {
+        position: relative
+    }
+
+    div.reply {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    & > li,
+    .comment {
+        border-top: solid 1px #eee;
+        font-size: 1em;
+        list-style-type: none;
+        margin: 0 0 10px 0;
+        padding: 15px 0 5px 0;
+    }
+
+    li.comment ul.children {
+        padding: 10px 0 0;
+
+        li {
+            clear: left;
+            margin: 0 10px 10px 10px;
+        }
+    }
+
+    img.avatar {
+        display: inline;
+        float: left;
+        margin: 0 15px 15px 0;
+    }
+
+
+    cite {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-left: 0;
+        font-style: normal;
+
+        a {
+            color: $primaryColor;
+            text-decoration: none;
+        }
+
+        &.author {
+            color: #333;
+        }
+    }
+
+    span.says {
+        display: none;
+    }
+
+    .commentmetadata {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 5px;
+    }
+
+    blockquote {
+        font-size: 12px;
+    }
+
+    li.bypostauthor {
+        background-color: #fff;
+        padding: 15px;
+        border-left: solid 4px $primaryColor;
+    }
+}
+
+#commentform {
+    clear: left;
+    margin-top: 15px;
+
+    code {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2.5;
+        text-transform: none;
+        margin: 0;
+    }
+
+    .subscribe-label {
+        margin: 0;
+    }
+
+    input {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        color: #333;
+        width: 100%;
+        font-size: 18px;
+        padding: 5px 10px;
+
+        &[type="text"] {
+            float: left;
+        }
+    }
+
+    textarea {
+        height: 100px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        color: #333;
+        padding: 5px 10px;
+    }
+
+    #submit {
+        font-family: $primaryFont;
+        font-size: 16px;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        background-color: #fff;
+        padding: 10px;
+        margin-top: 25px;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+            background-color: $primaryColor;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.werbeanzeige {
+    color: #666;
+    display: block;
+    font-size: 0.75rem !important;
+    line-height: 1em;
+    margin: 0 auto;
+    padding: 0 0 5px;
+    text-align: left;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.ad-right {
+    position: sticky;
+    top: 85px;
+    margin: 20px;
+    float: right;
+
+    @media screen and (max-width: 1770px) {
+        display: none
+    }
+}
+
+.adsbygoogle {
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+}

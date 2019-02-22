@@ -1,0 +1,87 @@
+a {
+    text-decoration: none;
+    transition: 0.2s ease all;
+    color: $primaryColor;
+
+    &:hover {
+        text-decoration: underline
+    }
+}
+
+
+/* --- WEITERLESEN / READ MORE BUTTON --- */
+
+a.more-link {
+    background-color: #fff;
+    border: solid 1px $primaryColor;
+    color: $primaryColor;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 6px 12px;
+    line-height: 1.7;
+    margin-top: 20px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primaryColor;
+        border: solid 1px $primaryColor;
+        color: #fff;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 6px 12px;
+        line-height: 1.7;
+        margin-top: 20px;
+
+        &::before {
+            content: "\2192\00a0"
+        }
+
+        &::after {
+            content: "!!!"
+        }
+    }
+}
+
+
+
+/* --- AFFILIATE-LINKS --- */
+
+a {
+    &.affili-link::after {
+        content: "*";
+    }
+
+    &.amazon-link::after {
+        content: "\f270";
+        font-family: "FontAwesome";
+        font-size: 0.8em;
+        margin-left: 3px;
+        vertical-align: 0.3em
+    }
+
+    &.db-link {
+        font-style: italic;
+
+        &::after {
+            content: "\00a0"url(../images/db-icon.png);
+        }
+    }
+
+    &.booking-link {
+        font-style: italic;
+
+        &::after {
+            content: "\00a0"url(../images/booking-icon.png);
+        }
+    }
+}
+
+
+/* --- Dies und das --- */
+
+a.webdeveloper {
+    color: #fff
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: $tablet) {
+    #sidebar-right,
+    #sidebar-left,
+    #content-sidebar-right,
+    #content-sidebar-left {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-left: 0
+    }
+}

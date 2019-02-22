@@ -1,0 +1,395 @@
+.nowrap {
+    white-space: nowrap
+}
+
+.note {
+    font-size: 0.75em;
+    font-style: italic
+}
+
+.price {
+    color: green;
+    font-weight: bold
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.zeitraum {
+    font-weight: bold
+}
+
+.anlagen {
+    font-style: italic
+}
+
+
+.margin-standard::after {
+    margin-bottom: 60px;
+}
+
+blockquote {
+    border-left: solid 2px $primaryColor;
+    font-style: italic;
+    margin: 14px 20px;
+    padding-left: 20px
+}
+
+/* --------------------------------------------------------------------------------
+    CSS VALIDATOR
+-------------------------------------------------------------------------------- */
+
+.css-validation {
+    margin-top: 12px;
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
+
+/* --------------------------------------------------------------------------------
+    BACK-TO-TOP-BUTTON
+-------------------------------------------------------------------------------- */
+
+#back-to-top {
+    font-size: 50px;
+    position: sticky;
+    bottom: 50px;
+    left: 100%;
+    transition-duration: 0.4s;
+    color: $primaryColor;
+    margin-right: 50px;
+}
+
+
+
+/* --------------------------------------------------------------------------------
+    BILD-UNTERSCHRIFT / CAPTION
+-------------------------------------------------------------------------------- */
+
+.wp-caption,
+.gallery-caption {
+    max-width: 100%;
+    display: inline
+}
+
+.wp-caption-text {
+    color: #000;
+    font-size: 0.85em;
+    margin: -10px 0 45px 0
+}
+
+.wp-caption-text span {
+    float: right;
+    font-style: italic
+}
+
+img.alignright,
+.wp-caption.alignright {
+    margin: 3px 0 10px 15px
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+    margin: 3px 15px 10px 0
+}
+
+
+/* --------------------------------------------------------------------------------
+    ALIGN / AUSRICHTUNG
+-------------------------------------------------------------------------------- */
+
+.alignright {
+    float: right
+}
+
+.alignleft {
+    float: left
+}
+
+.aligncenter {
+    float: none
+}
+
+.textaligncenter {
+    text-align: center
+}
+
+.textalignright {
+    text-align: right
+}
+
+.textalignleft {
+    text-align: left
+}
+
+.textalignjustify {
+    text-align: justify
+}
+
+
+
+// VIDEOS
+
+.video-library {
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.video-library-inner {
+    transition: 450ms transform;
+    white-space: nowrap;
+    margin: 30px 0;
+    padding-bottom: 10px;
+}
+
+.video {
+    position: relative;
+    display: inline-block;
+    width: 256px;
+    height: 144px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s all;
+    transform-origin: center left;
+}
+
+.video-thumbnail {
+    width: 256px;
+    height: 144px;
+    object-fit: cover;
+}
+
+.video-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    opacity: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    transition: 450ms opacity;
+}
+
+.video-details:after,
+.video-details:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.video-details:after {
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ecf0f1;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-details:before {
+    content: '>';
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+    margin-left: 3px;
+    margin-top: -21px;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
+
+.video:hover .video-details {
+    opacity: 1;
+}
+
+.video-title {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.video-library-inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+}
+
+.video-library-inner:hover .video:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.video:hover ~ .video {
+    transform: translate3d(125px, 0, 0);
+}
+
+
+
+
+
+
+/* ----------------------------
+    STECKBRIEF
+---------------------------- */
+
+.steckbrief {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    img {
+        float: left;
+        margin: 0 20px 0 0;
+
+        @media (max-width: 600px) {
+            float: none;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    span {
+        float: right;
+        font-style: italic;
+    }
+
+    a {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &.wp-caption-text {
+        margin: -10px 0 0 0;
+    }
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------
+    BILDTEXT (TEXT AUF BILD)
+-------------------------------------------------------------------------------- */
+
+.bildtext-01 {
+    position: relative;
+    margin-bottom: 15px;
+
+    img {
+        display: block;
+    }
+
+    span {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: 2em;
+        text-align: left;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 20pt;
+
+        @media (max-width: 500px) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            line-height: 2em;
+            text-align: left;
+            margin-left: 10px;
+            color: #fff;
+            font-size: 12pt
+        }
+    }
+}
+
+
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+
+
+
+.sticky {
+    position: relative;
+}
+
+.gallery-caption {}
+
+
+
+
+
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+
+
+.wp-caption-special-1 {
+    color: #666;
+    font-size: 0.85em;
+    margin: 0 3% 45px 0;
+
+    span {
+        float: right;
+        font-style: italic;
+    }
+}

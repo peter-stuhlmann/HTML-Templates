@@ -1,0 +1,36 @@
+.testimonials {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+
+    @media (max-width: $mobile) {
+        text-align: center;
+    }
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    img {
+        width: 200px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+
+        @media (max-width: $mobile) {
+            margin: auto;
+            float: none;
+            display: block;
+        }
+    }
+
+    span {
+        float: right;
+        font-style: italic;
+    }
+}

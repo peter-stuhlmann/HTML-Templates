@@ -1,0 +1,27 @@
+#search {
+    float: right;
+    margin: 9px 15px 0 0;
+
+    input {
+        background-color: $secondaryColor;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 9px;
+        font-size: 1em;
+    }
+
+    ::placeholder {
+        color: #C6D9DB;
+    }
+}
+
+#searchform {
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        font-family: $primaryFont;
+        font-size: 1em;
+    }
+}

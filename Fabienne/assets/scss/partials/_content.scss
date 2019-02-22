@@ -1,0 +1,54 @@
+#content {
+    line-height: 1.6;
+    margin: 0;
+}
+
+#content-sidebar-left {
+    float: right;
+    width: 72%;
+    margin-left: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#content-sidebar-right {
+    float: left;
+    width: 72%;
+    margin-right: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#sidebar-left {
+    float: left;
+    width: 26%;
+    margin-right: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#sidebar-right {
+    float: right;
+    width: 26%;
+    margin-left: 1%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#content-fullwidth {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+#content-fullwidth-extreme {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box
+}
